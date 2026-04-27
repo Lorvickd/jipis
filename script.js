@@ -11,3 +11,15 @@ function nextSlide() {
 
   slides[currentSlide].classList.add("active");
 }
+const music = document.getElementById("bg-music");
+let isPlaying = false;
+
+function toggleMusic() {
+  if (isPlaying) {
+    music.pause();
+    isPlaying = false;
+  } else {
+    music.play();
+    isPlaying = true;
+  }
+}
